@@ -13,10 +13,9 @@
     <header>
     </header>
     <main>
-        <div class="background"><button class="btn-openModal">Open modal</button></div>
+        <div class="background"><button class="btn-openModal" tabindex="0">Open modal</button></div>
         <div class="overlay hide"></div>
-        <div class="modal hide" tabindex="-1">
-            <i class="fa fa-times"></i>
+        <div class="modal hide" tabindex=0>
             <h1>CSSScript.com</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ullamcorper odio. Praesent auctor tellus quis
@@ -25,8 +24,9 @@
                 tempus at odio. Nulla convallis eget nisl non scelerisque. Proin et mi et nulla rutrum sollicitudin.
             </p>
             <div class="modal-footer">
-                <button class="okey">Okey</button>
-                <button class="cancel">Cancel</button>
+                <button class="okey" tabindex=0>Okey</button>
+                <button class="cancel" tabindex=0>Cancel</button>
+                <button class="fa fa-times" tabindex="0"></button>
             </div>
         </div>
         
